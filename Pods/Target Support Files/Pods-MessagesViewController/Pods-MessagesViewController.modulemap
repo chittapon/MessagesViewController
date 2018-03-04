@@ -1,0 +1,6 @@
+framework module Pods_MessagesViewController {
+  umbrella header "Pods-MessagesViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
