@@ -18,7 +18,6 @@
 		50024A33204C563C006110DE /* AudioMediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50024A19204C563B006110DE /* AudioMediaItem.swift */; };
 		50024A34204C563C006110DE /* PhotoMediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50024A1A204C563B006110DE /* PhotoMediaItem.swift */; };
 		50024A35204C563C006110DE /* MessagesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50024A1B204C563B006110DE /* MessagesViewController.storyboard */; };
-		50024A36204C563C006110DE /* jsq_messages_sample.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 50024A1D204C563B006110DE /* jsq_messages_sample.m4a */; };
 		50024A37204C563C006110DE /* MessagesSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50024A1F204C563B006110DE /* MessagesSectionController.swift */; };
 		50024A38204C563C006110DE /* MessagesMediaViewBubbleImageMasker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50024A21204C563C006110DE /* MessagesMediaViewBubbleImageMasker.swift */; };
 		50024A39204C563C006110DE /* MessagesOutgoingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50024A23204C563C006110DE /* MessagesOutgoingCollectionViewCell.swift */; };
@@ -31,6 +30,7 @@
 		50024A40204C563C006110DE /* Messages+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50024A2B204C563C006110DE /* Messages+UIImage.swift */; };
 		50024A41204C563C006110DE /* Messages+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50024A2C204C563C006110DE /* Messages+UIColor.swift */; };
 		50024A42204C563C006110DE /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50024A2D204C563C006110DE /* MessagesViewController.swift */; };
+		7CF866B1204CE69400147A74 /* jsq_messages_sample.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7CF866B0204CE69400147A74 /* jsq_messages_sample.m4a */; };
 		9AA256FBA66FB4935FFF143D /* Pods_MessagesViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA9649DB7C8B4B96C278B71 /* Pods_MessagesViewController.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,6 @@
 		50024A19204C563B006110DE /* AudioMediaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioMediaItem.swift; sourceTree = "<group>"; };
 		50024A1A204C563B006110DE /* PhotoMediaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMediaItem.swift; sourceTree = "<group>"; };
 		50024A1B204C563B006110DE /* MessagesViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MessagesViewController.storyboard; sourceTree = "<group>"; };
-		50024A1D204C563B006110DE /* jsq_messages_sample.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = jsq_messages_sample.m4a; sourceTree = "<group>"; };
 		50024A1F204C563B006110DE /* MessagesSectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesSectionController.swift; sourceTree = "<group>"; };
 		50024A21204C563C006110DE /* MessagesMediaViewBubbleImageMasker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesMediaViewBubbleImageMasker.swift; sourceTree = "<group>"; };
 		50024A23204C563C006110DE /* MessagesOutgoingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesOutgoingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		50024A2C204C563C006110DE /* Messages+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Messages+UIColor.swift"; sourceTree = "<group>"; };
 		50024A2D204C563C006110DE /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		75D801AF206904DEE04DFF49 /* Pods-MessagesViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagesViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-MessagesViewController/Pods-MessagesViewController.release.xcconfig"; sourceTree = "<group>"; };
+		7CF866B0204CE69400147A74 /* jsq_messages_sample.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = jsq_messages_sample.m4a; sourceTree = "<group>"; };
 		B09B980C2AAABB32B59D1C68 /* Pods-MessagesViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessagesViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MessagesViewController/Pods-MessagesViewController.debug.xcconfig"; sourceTree = "<group>"; };
 		DDA9649DB7C8B4B96C278B71 /* Pods_MessagesViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessagesViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				500249CE204C53FB006110DE /* AppDelegate.swift */,
+				7CF866B2204CE6B000147A74 /* ViewController */,
 				50024A43204C5656006110DE /* Storyboard */,
-				50024A44204C566C006110DE /* ViewController */,
 				50024A1E204C563B006110DE /* SectionController */,
 				50024A22204C563C006110DE /* View */,
 				50024A13204C563B006110DE /* Model */,
@@ -132,7 +132,7 @@
 		50024A1C204C563B006110DE /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				50024A1D204C563B006110DE /* jsq_messages_sample.m4a */,
+				7CF866B0204CE69400147A74 /* jsq_messages_sample.m4a */,
 			);
 			name = Resource;
 			path = ../../Example/PlaygroundLibrary/MessagesViewController/Resource;
@@ -185,13 +185,12 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		50024A44204C566C006110DE /* ViewController */ = {
+		7CF866B2204CE6B000147A74 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				50024A2D204C563C006110DE /* MessagesViewController.swift */,
 			);
-			name = ViewController;
-			path = "New Group";
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		8DF613CA1B28BF3A1EED3235 /* Pods */ = {
@@ -276,7 +275,7 @@
 				50024A3C204C563C006110DE /* MessagesOutgoingCollectionViewCell.xib in Resources */,
 				50024A3B204C563C006110DE /* MessagesIncomingCollectionViewCell.xib in Resources */,
 				50024A35204C563C006110DE /* MessagesViewController.storyboard in Resources */,
-				50024A36204C563C006110DE /* jsq_messages_sample.m4a in Resources */,
+				7CF866B1204CE69400147A74 /* jsq_messages_sample.m4a in Resources */,
 				500249D9204C53FB006110DE /* LaunchScreen.storyboard in Resources */,
 				500249D6204C53FB006110DE /* Assets.xcassets in Resources */,
 			);
