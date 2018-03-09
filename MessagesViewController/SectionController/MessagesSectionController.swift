@@ -17,7 +17,7 @@ class MessagesSectionController: ListSectionController {
 
     weak var avatarImageDataSource: MessageAvatarImageDataSource?
     var object: Message!
-    var cacheTextSize = [Int: CGSize]()
+    var cacheTextSize = NSCache<AnyObject, AnyObject>()
     
     override init() {
         super.init()
@@ -37,21 +37,26 @@ class MessagesSectionController: ListSectionController {
             cell = collectionContext?.dequeueReusableCell(withNibName: "MessagesIncomingCollectionViewCell", bundle: nil, for: self, at: index) as! MessagesCollectionViewCell
         }
         
-        let textSize = cacheTextSize[index] ?? collectionContext!.containerSize
+        let textSize = (self.cacheTextSize.object(forKey: index as AnyObject) as? CGSize) ?? collectionContext!.containerSize
         let avatarImageData = self.avatarImageDataSource?.messagesSectionController(avatarImageWith: object)
         cell.configCell(message: object, textViewSize: textSize, avatarImageData: avatarImageData)
         return cell
     }
     
     override func sizeForItem(at index: Int) -> CGSize {
+        
         let width = UIScreen.main.bounds.width
+        if let cacheItemSize = self.cacheTextSize.object(forKey: index as AnyObject) as? CGSize{
+            return CGSize(width: width, height: cacheItemSize.height)
+        }
+        
         let size: CGSize
         if object.isMediaMessage {
             size = object.media?.mediaViewDisplaySize ?? CGSize.zero
         }else {
             size = MessagesCollectionViewCell.textSize(object, width: width)
         }
-        self.cacheTextSize[index] = size
+        self.cacheTextSize.setObject(size as AnyObject, forKey: index as AnyObject)
         return CGSize(width: width, height: size.height)
     }
     
